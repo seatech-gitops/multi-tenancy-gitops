@@ -10,8 +10,8 @@ spec:
   project: default
   source:
     path: 0-bootstrap/others/apic-multi-cluster/template-gateway-analytics-cluster
-    repoURL: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS}
-    targetRevision: ${GIT_GITOPS_BRANCH}
+    repoURL: https://toolkit:toolkit@gitea-tools.apps.653f41941078770017111eb7.cloud.techzone.ibm.com/tzgitops/multi-tenancy-gitops.git
+    targetRevision: master
   syncPolicy:
     automated:
       prune: true

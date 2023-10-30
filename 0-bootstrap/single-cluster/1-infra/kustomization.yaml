@@ -48,7 +48,7 @@ resources:
 #- argocd/norootsquash.yaml
 #- argocd/daemonset-sync-global-pullsecret.yaml
 #- argocd/storage.yaml
-#- argocd/infraconfig.yaml
+- argocd/infraconfig.yaml
 #- argocd/machinesets.yaml
 patches:
 - target:
@@ -58,7 +58,7 @@ patches:
   patch: |-
     - op: add
       path: /spec/source/repoURL
-      value: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS_INFRA}
+      value: https://toolkit:toolkit@gitea-tools.apps.653f41941078770017111eb7.cloud.techzone.ibm.com/tzgitops/multi-tenancy-gitops-infra.git
     - op: add
       path: /spec/source/targetRevision
-      value: ${GIT_GITOPS_INFRA_BRANCH}
+      value: master
