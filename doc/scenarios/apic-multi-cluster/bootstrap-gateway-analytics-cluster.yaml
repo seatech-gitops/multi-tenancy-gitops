@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: 0-bootstrap/others/apic-multi-cluster/template-gateway-analytics-cluster
-    repoURL: https://toolkit:toolkit@gitea-tools.apps.653f41941078770017111eb7.cloud.techzone.ibm.com/tzgitops/multi-tenancy-gitops.git
+    repoURL: https://github.com/seatech-gitops/multi-tenancy-gitops.git
     targetRevision: master
   syncPolicy:
     automated:
